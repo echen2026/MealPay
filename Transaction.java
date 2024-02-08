@@ -6,4 +6,12 @@ public class Transaction {
         date = myDate;
         amount = myAmount;
     }
+
+    public String getDate(){
+        return date;
+    }
+
+    public int getAmount(){
+        return amount;
+    }
 }
