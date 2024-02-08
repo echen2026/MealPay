@@ -1,8 +1,8 @@
 public class Transaction {
     private String date;
-    private int amount;
+    private double amount;
 
-    public Transaction(String myDate, int myAmount){
+    public Transaction(String myDate, double myAmount){
         date = myDate;
         amount = myAmount;
     }
@@ -11,7 +11,7 @@ public class Transaction {
         return date;
     }
 
-    public int getAmount(){
+    public double getAmount(){
         return amount;
     }
 }
