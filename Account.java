@@ -23,5 +23,9 @@ public class Account {
     public int getID(){
         return ID;
     }
+
+    public String getName(){
+        return name;
+    }
     
 }
