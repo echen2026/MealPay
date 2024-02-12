@@ -15,6 +15,7 @@ public class Roster {
         for(int i = 0; i < students.size(); i++){
             overall += "Student: " + students.get(i).getName() + "ID: " + students.get(i).getID() + "Balance: " + students.get(i).getBalance() + "Transactions: " students.get(i).getTransactions() + "\n";
         }
+        return overall;
     }
 
 }
