@@ -13,9 +13,21 @@ public class Roster {
     public String toString(){
         String overall = "";
         for(int i = 0; i < students.size(); i++){
-            overall += "Student: " + students.get(i).getName() + "ID: " + students.get(i).getID() + "Balance: " + students.get(i).getBalance() + "Transactions: " + students.get(i).getTransactions() + "\n";
+            overall += "Student: " + students.get(i).getName() + ", ID: " + students.get(i).getID() + ", Balance: " + students.get(i).getBalance() + ", Transactions: " + students.get(i).getTransactions() + "\n";
         }
         return overall;
+    }
+
+    public void addAccount(Account acc){
+        students.add(acc);
+    }
+
+    public void idLookup(int num){
+        for(int s = 0; s < students.size(); s++){
+            if(students.get(s).getID()==num){
+                System.out.println("Student: " + students.get(s).getName() + ", ID: " + students.get(s).getID() + ", Balance: " + students.get(s).getBalance() + ", Transactions: " + students.get(s).getTransactions() + "\n");
+            }
+        }
     }
 
     public String dateTransactions(String date){
