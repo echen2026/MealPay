@@ -43,7 +43,7 @@ public class Account {
     public String getTransactions(){
         String overall = "";
         for(int i = 0; i < list.size(); i++){
-            overall += list.get(i).toString();
+            overall += list.get(i).toString() + "; ";
         }
         return overall;
     }
