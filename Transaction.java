@@ -14,4 +14,8 @@ public class Transaction {
     public double getAmount(){
         return amount;
     }
+
+    public String toString(){
+        return date + ", $" + amount;
+    }
 }
