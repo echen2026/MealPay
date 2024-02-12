@@ -39,5 +39,13 @@ public class Account {
         Transaction t = new Transaction(date, amount);
         list.add(t);
     }
+
+    public String getTransaction(){
+        String overall = "";
+        for(int i = 0; i < list.size(); i++){
+            overall += list.get(i).toString();
+        }
+        return overall;
+    }
     
 }
