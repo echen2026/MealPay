@@ -40,7 +40,7 @@ public class Account {
         list.add(t);
     }
 
-    public String getTransaction(){
+    public String getTransactions(){
         String overall = "";
         for(int i = 0; i < list.size(); i++){
             overall += list.get(i).toString();
