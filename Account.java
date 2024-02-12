@@ -15,5 +15,9 @@ public class Account {
         ID = idgen;
         idgen++;
     }
+
+    public double getBalance(){
+        return balance;
+    }
     
 }
