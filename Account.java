@@ -19,5 +19,9 @@ public class Account {
     public double getBalance(){
         return balance;
     }
+
+    public int getID(){
+        return ID;
+    }
     
 }
