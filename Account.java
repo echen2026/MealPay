@@ -33,5 +33,11 @@ public class Account {
         Transaction t = new Transaction(date, -7);
         list.add(t);
     }
+
+    public void addMoney(int amount, String date){
+        balance += amount;
+        Transaction t = new Transaction(date, amount);
+        list.add(t);
+    }
     
 }
