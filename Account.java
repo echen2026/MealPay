@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Account {
     private ArrayList<Transaction> list;
     private double balance;
-    private int idNumber;
+    private int ID;
     private static int idgen = 1;
     private String name;
     
@@ -12,7 +12,8 @@ public class Account {
         list = new ArrayList<Transaction>();
         name = myName;
         balance = 0;
-        idNumber = idgen;
+        ID = idgen;
         idgen++;
     }
+    
 }
