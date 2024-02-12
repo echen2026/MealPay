@@ -47,5 +47,9 @@ public class Account {
         }
         return overall;
     }
+
+    public ArrayList<Transaction> getList(){
+        return list;
+    }
     
 }

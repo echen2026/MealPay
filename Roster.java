@@ -18,4 +18,18 @@ public class Roster {
         return overall;
     }
 
+    public String dateTransactions(String date){
+        String overall = "";
+
+        for(int s = 0; s < students.size(); s++){
+            for(int t = 0; t < students.get(s).getList().size(); t++){
+                if(students.get(s).getList().get(t).getDate().equals(date)){
+                    overall += date + ", $" + students.get(s).getList().get(t).getAmount() + ") by " + students.get(s).getName() + " - ID: " + students.get(s).getID() + "\n";
+                }
+            }
+        }
+
+        return overall;
+    }
+
 }
