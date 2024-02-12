@@ -27,5 +27,11 @@ public class Account {
     public String getName(){
         return name;
     }
+
+    public void buyMeal(String date){
+        balance -= 7;
+        Transaction t = new Transaction(date, -7);
+        list.add(t);
+    }
     
 }
